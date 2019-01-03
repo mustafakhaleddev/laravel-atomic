@@ -2,7 +2,6 @@
 
 ![atomic](http://laravel-atomic.mustafakhaled.com/assets/img/panel.png)
 
-[[toc]]
 
 # 🚀 Documentation
 Atomic Panel Full Documentation [here](http://laravel-atomic.mustafakhaled.com)

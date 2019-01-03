@@ -1,0 +1,27 @@
+<?php
+
+namespace {{ namespace }}\Http\Controllers;
+
+class PageController extends BaseController
+{
+
+    /**
+     * Atomic page index view
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function index()
+    {
+        return view($this->atomicView . '::index');
+    }
+
+
+    /**
+      * simple redirect to page routes method
+      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+      */
+     public function redirect()
+     {
+         return redirect(route($this->atomicPage::routePath('index')));
+     }
+
+}

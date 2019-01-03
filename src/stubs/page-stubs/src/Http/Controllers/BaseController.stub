@@ -1,0 +1,25 @@
+<?php
+
+namespace {{ namespace }}\Http\Controllers;
+
+
+use App\Http\Controllers\Controller;
+use MustafaKhaled\AtomicPanel\AtomicPanel;
+use {{ namespace }}\{{ class }};
+
+class BaseController extends Controller
+{
+
+      protected $atomicView;
+      protected $atomicPage;
+
+      /**
+       * BaseController constructor.
+       */
+      public function __construct()
+      {
+          $this->atomicPage = {{ class }}::class;
+          $this->atomicView = AtomicPanel::classNamespace($this->atomicPage);
+      }
+
+}

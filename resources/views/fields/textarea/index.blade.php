@@ -1,0 +1,1 @@
+'<a class="atomic-show-more" href="#" data-atomic-value="'+value+'" data-atomic-name="{{$field->name}}">{{__("atomic::main.Show Details")}}</a>'

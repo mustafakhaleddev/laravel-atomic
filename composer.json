@@ -1,0 +1,35 @@
+{
+  "name": "mustafakhaleddev/laravel-atomic",
+  "description": "Atomic Admin Panel For Laravel",
+  "authors": [
+    {
+      "name": "Mustafa Khaled",
+      "email": "mustafa@mustafakhaled.com",
+      "homepage": "https://mustafakhaled.com"
+    }
+  ],
+  "keywords": [
+    "laravel","Atomic Panel","mustafakhaled","Atomic","Admin Panel","laravel admin","Mustafa Khaled"
+  ],
+  "license": "MIT",
+  "require": {
+    "php": "^7.1.3",
+    "yajra/laravel-datatables-oracle": "~8.0",
+    "laracasts/flash": "3.0.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "MustafaKhaled\\AtomicPanel\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "MustafaKhaled\\AtomicPanel\\AtomicPanelServiceProvider"
+      ],
+      "aliases": {
+      }
+    }
+  },
+  "minimum-stability": "stable"
+}

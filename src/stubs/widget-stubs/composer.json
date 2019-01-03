@@ -1,0 +1,35 @@
+{
+    "name": "{{ name }}",
+    "description": "A Laravel Atomic Panel Widget.",
+    "keywords": [
+        "laravel",
+        "atomicpanel",
+        "atomic",
+        "admin panel",
+        "atomic panel",
+        "dashboard",
+        "admin",
+        "laravel admin"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "{{ escapedNamespace }}\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "{{ escapedNamespace }}\\WidgetServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

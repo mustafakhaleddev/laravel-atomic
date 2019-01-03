@@ -1,0 +1,19 @@
+<?php
+namespace {{ namespace }}\Http\Controllers;
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class WidgetController extends Controller
+{
+
+    /**
+     * Widget Response
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function action(Request $request)
+    {
+        flash('thanks ♥ for your request');
+        return redirect()->back();
+    }
+
+}

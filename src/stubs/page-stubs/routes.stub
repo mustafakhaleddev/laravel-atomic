@@ -1,0 +1,4 @@
+<?php
+
+Route::get('/','PageController@index')->name('index');
+Route::get('/redirect','PageController@redirect')->name('redirect');

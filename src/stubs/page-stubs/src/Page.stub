@@ -1,0 +1,11 @@
+<?php
+
+namespace {{ namespace }};
+
+use MustafaKhaled\AtomicPanel\AtomicPage;
+
+class {{ class }} extends AtomicPage
+{
+
+
+}

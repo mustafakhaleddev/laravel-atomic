@@ -1,0 +1,23 @@
+<?php
+
+namespace {{ namespace }};
+
+use MustafaKhaled\AtomicPanel\AtomicPanel;
+use MustafaKhaled\AtomicPanel\AtomicWidget;
+
+class {{ class }} extends AtomicWidget
+{
+
+    public $widgetCols = 3;
+
+
+    /**
+     * @param null $AtomicModel
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View|null
+     */
+    public function render($AtomicModel = null)
+    {
+        return view(AtomicPanel::classNamespace({{ class }}::class) . '::widget')->with('widget', {{ class }}::class);
+    }
+
+}

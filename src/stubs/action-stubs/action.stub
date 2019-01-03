@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Atomic\Actions;
+
+
+use MustafaKhaled\AtomicPanel\ActionMessage;
+use MustafaKhaled\AtomicPanel\AtomicModelAction;
+
+class {{ class }} extends AtomicModelAction
+{
+
+    /**
+     * @param $model
+     * @return \Illuminate\Http\RedirectResponse|null
+     */
+    public function handle($model)
+    {
+        ActionMessage::make(__("Success Message"))->success();
+        return redirect()->back();
+    }
+
+}

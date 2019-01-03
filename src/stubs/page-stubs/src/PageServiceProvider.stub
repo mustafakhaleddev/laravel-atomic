@@ -1,0 +1,70 @@
+<?php
+
+namespace {{ namespace }};
+
+use Illuminate\Support\Facades\Route;
+use MustafaKhaled\AtomicPanel\AtomicPageServiceProvider;
+use MustafaKhaled\AtomicPanel\AtomicPanel;
+use MustafaKhaled\AtomicPanel\Events\ServingAtomic;
+
+class PageServiceProvider extends AtomicPageServiceProvider
+{
+
+    /**
+     * @throws \ReflectionException
+     */
+    public function boot()
+    {
+        AtomicPanel::serving(function (ServingAtomic $event) {
+            AtomicPanel::serveScripts([]);
+            AtomicPanel::serveStyles([]);
+        });
+        parent::boot();
+    }
+
+
+    /**
+     * Register the package routes.
+     *
+     * @return void
+     */
+    protected function registerRoutes()
+    {
+        Route::group($this->routeConfiguration(), function () {
+            $this->loadRoutesFrom(__DIR__ . '/../routes.php');
+        });
+    }
+
+
+    /**
+     * Register the package views.
+     *
+     * @return void
+     */
+    protected function registerViews()
+    {
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', AtomicPanel::classNamespace($this->registerPage()));
+    }
+
+
+    /**
+     * register page class
+     * @return null|string
+     */
+    protected function registerPage()
+    {
+        return {{ class }}::class;
+    }
+
+
+    /**
+     * Register any application services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        //
+    }
+}
+

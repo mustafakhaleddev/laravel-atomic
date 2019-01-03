@@ -1,0 +1,16 @@
+<?php
+
+namespace {{ namespace }};
+
+use MustafaKhaled\AtomicPanel\Fields\AtomicField;
+
+class {{ class }} extends AtomicField
+{
+    /**
+     * The field's view.
+     *
+     * @var string
+     */
+     public $FieldView = '{{ namespace }}-{{ component }}::field';
+
+}

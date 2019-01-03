@@ -1,0 +1,3 @@
+<?php
+
+Route::post('/','WidgetController@action')->name('action');

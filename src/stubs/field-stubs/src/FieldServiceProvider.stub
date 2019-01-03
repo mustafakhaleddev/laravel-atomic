@@ -1,0 +1,32 @@
+<?php
+
+namespace {{ namespace }};
+
+use Illuminate\Support\ServiceProvider;
+use MustafaKhaled\AtomicPanel\AtomicPanel;
+use MustafaKhaled\AtomicPanel\Events\ServingAtomic;
+
+class FieldServiceProvider extends ServiceProvider
+{
+    /**
+     * @throws \ReflectionException
+     */
+    public function boot()
+    {
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', '{{ namespace }}-{{ component }}');
+        AtomicPanel::serving(function (ServingAtomic $event) {
+            AtomicPanel::serveScripts([]);
+            AtomicPanel::serveStyles([]);
+        });
+    }
+
+    /**
+     * Register any application services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        //
+    }
+}

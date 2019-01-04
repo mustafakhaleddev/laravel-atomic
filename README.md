@@ -4,14 +4,14 @@
 
 
 # 🚀 Documentation
-Atomic Panel Full Documentation [here](http://laravel-atomic.mustafakhaled.com)
+Atomic Panel full documentation is [here](http://laravel-atomic.mustafakhaled.com).
 
-# 💪 Support me
-Support me in [Patreon](http://patreon.com/mustafakhaled) to help me keep going
+# 💪 Support Me
+Support me in [Patreon](http://patreon.com/mustafakhaled) to help me keep going.
 
 
 ## 🔥 Getting Started
-Atomic Panel is a beautifully designed administration panel for Laravel. To make you the most productive developer in the galaxy and give your the opportunity to lead the future.
+Atomic Panel is a beautifully designed administration panel for Laravel. To make you the most productive developer in the galaxy and give you the opportunity to lead the future.
 
 
 ## Requirements
@@ -22,18 +22,18 @@ Atomic Panel is a beautifully designed administration panel for Laravel. To make
 
 ## Installation
 
-Require this package in the `composer.json` of your Laravel project. This will download the package.
+Require this package in the `composer.json` of your Laravel project. This will download the package:
 
 ```
 composer require mustafakhaleddev/laravel-atomic
 ```
 
-Install AtomicPanel
+Install AtomicPanel:
 ```
 php artisan atomic:install
 ```
 
-Add the ServiceProvider in `config/app.php`
+Add the ServiceProvider in `config/app.php`:
 
 ```php
 'providers' => [
@@ -44,7 +44,7 @@ Add the ServiceProvider in `config/app.php`
 ]
 ```
 
-Published Files with installation
+Published files with installation:
 
 ```
 -app
@@ -66,11 +66,11 @@ __________________________
 
 ```
 #### AtomicPanel
-to make admin user
+To make admin user:
 ```php
 php artisan atomic:user
 ```
-then open `https://yourwebsite.domain/atomic`
+Then open `https://yourwebsite.domain/atomic`.
 
 ### Authorizing Atomic
 Within your `app/Providers/AtomicServiceProvider.php` file, there is a gate method. This authorization gate controls access to Atomic in non-local environments. By default, any user can access the Atomic Panel when the current application environment is local. You are free to modify this gate as needed to restrict access to your Atomic installation: 
@@ -93,13 +93,13 @@ Within your `app/Providers/AtomicServiceProvider.php` file, there is a gate meth
 ```
 ## Usage
 
-Atomic Panel is the best curd. it works with Laravel Models.
-If you don`t want to use laravel models so you can create your own pages.
+Atomic Panel is the best CRUD. It works with Laravel models.
+If you don't want to use Laravel models, you can create your own pages.
 
-## ⏰ 3 steps for best curd 
+## ⏰ 3 Steps for Best CRUD
 
 ### ☝ Step 1
-Include `AtomicModel` trait in your model
+Include `AtomicModel` trait in your model:
 ```php
 <?php
 
@@ -114,7 +114,7 @@ class MyModel extends Model
 ```
 
 ### ☝ Step 2
-Override `AtomicFields()` method in model
+Override `AtomicFields()` method in model:
 ```php
 <?php
 
@@ -133,7 +133,7 @@ class MyModel extends Model
 }
 ```
 ### ☝ Step 3
-Register your curd fields
+Register your CRUD fields:
 ```php
 <?php
 
